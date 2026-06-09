@@ -260,7 +260,7 @@ export default function EarthBanner() {
     // 初始化函式，載入地圖資訊跟啟動動畫循環
     const init = async () => {
       // 讀取地圖資訊 (板塊)，格式為 TopoJSON，一種將 GeoJSON 格式的區塊間邊界共用的壓縮版地理資訊格式
-      const res = await fetch("/data/land-110m.json");
+      const res = await fetch(`${import.meta.env.BASE_URL}data/land-110m.json`);
 
       if (!res.ok) {
         throw new Error("讀取 land-110m.json 失敗");
