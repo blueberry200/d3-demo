@@ -1,8 +1,4 @@
-import {
-  createBrowserRouter,
-  createHashRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { TimedOverlay } from "@/components/timed-overlay";
 import AppLayout from "@/pages/app-layout";
 
@@ -48,13 +44,7 @@ const routes = [
   },
 ];
 
-// 判斷是不是跑在 GitHub Pages（例如 your-name.github.io）
-const isGithubPages = window.location.hostname.endsWith("github.io");
-
-// GitHub Pages → Hash Router，其它情況 → Browser Router
-const router = isGithubPages
-  ? createHashRouter(routes)
-  : createBrowserRouter(routes);
+const router = createHashRouter(routes);
 
 export default function AppRoutes() {
   return <RouterProvider router={router} />;
