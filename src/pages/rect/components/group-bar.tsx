@@ -182,7 +182,7 @@ export default function ChipFactoryGroupedBarChart() {
       .join("text")
       .attr("class", "bar-label")
       .attr("text-anchor", "start")
-      .attr("fill", "#334155")
+      .attr("fill", "#ffffff")
       .style("font-size", "10px")
       .style("font-weight", "700")
       .style("pointer-events", "none")
@@ -225,7 +225,7 @@ export default function ChipFactoryGroupedBarChart() {
       .join("text")
       .attr("x", 28)
       .attr("y", 14)
-      .attr("fill", "#334155")
+      .attr("fill", "#ffffff")
       .style("font-size", "14px")
       .style("font-weight", "700")
       .text((d) => chipLabels[d]);

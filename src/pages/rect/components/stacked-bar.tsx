@@ -178,7 +178,7 @@ export default function ChipFactoryStackedBarChart() {
       .data(data, (d) => d.id)
       .join("text")
       .attr("text-anchor", "middle")
-      .attr("fill", "#334155")
+      .attr("fill", "#ffffff")
       .style("font-size", "13px")
       .style("font-weight", "700")
       .style("pointer-events", "none")
@@ -214,7 +214,7 @@ export default function ChipFactoryStackedBarChart() {
       .join("text")
       .attr("x", 28)
       .attr("y", 14)
-      .attr("fill", "#334155")
+      .attr("fill", "#ffffff")
       .style("font-size", "14px")
       .style("font-weight", "700")
       .text((d) => chipLabels[d]);

@@ -175,7 +175,7 @@ export default function ChipFactorySalesBarChart() {
       .data(data, (d) => d.id)
       .join("text")
       .attr("text-anchor", "middle")
-      .attr("fill", "#334155")
+      .attr("fill", "#ffffff")
       .style("font-size", "13px")
       .style("font-weight", "700")
       .style("pointer-events", "none")
